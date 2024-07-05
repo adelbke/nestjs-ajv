@@ -1,0 +1,47 @@
+{
+  "name": "nestjs-ajv",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json"
+  },
+  "author": "Kamel Eddine Adel Bouhraoua",
+  "license": "MIT",
+  "description": "This library allows the use of the AJV library whithin nestjs.",
+  "keywords": ["validation","JSONSchema", "nestjs", "decorators", "IETF"],
+  "peerDependencies": {
+    "@nestjs/common": "^9.4.3",
+    "@nestjs/core": "^9.4.3",
+    "ajv": "^8.16.0"
+  },
+  "devDependencies": {
+    "@nestjs/platform-express": "^9.4.3",
+    "@nestjs/testing": "^9.4.3",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "@types/supertest": "^2.0.16",
+    "class-validator-jsonschema": "^5.0.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "testRegex": "(/tests/(.*))\\.test.ts$",
+    "transform": {
+      "^.+\\.(t|j)s$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "src/*.ts",
+      "src/**/*.ts"
+    ],
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node"
+  }
+}
